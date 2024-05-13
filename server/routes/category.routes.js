@@ -1,0 +1,11 @@
+const express = require("express")
+const authentication = require("../middleware/authentication")
+const CategoryController = require("../controllers/category.controller")
+const router = express.Router()
+router.use(authentication)
+router.get("/", CategoryController.all_category)
+router.post("/", CategoryController.create_category)
+router.get("/:id", CategoryController.single_category)
+router.patch("/:id", CategoryController.update_category)
+router.delete("/:id", CategoryController.delete_category)
+module.exports = router;

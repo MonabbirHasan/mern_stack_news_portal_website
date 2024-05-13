@@ -1,0 +1,11 @@
+const express = require("express")
+const authentication = require("../middleware/authentication")
+const ContactController = require("../controllers/contact.controller")
+const router = express.Router()
+router.use(authentication)
+router.get("/", ContactController.all_contact)
+router.post("/", ContactController.create_contact)
+router.get("/:id", ContactController.single_contact)
+router.patch("/:id", ContactController.update_contact)
+router.delete("/:id", ContactController.delete_contact)
+module.exports = router;

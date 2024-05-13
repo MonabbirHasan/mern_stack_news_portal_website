@@ -1,0 +1,117 @@
+.front_footer footer {
+    padding-top: 50px;
+    background: #333;
+}
+
+/* footer_logo */
+.front_footer footer .footer_logo {
+    padding: 5px;
+}
+
+.front_footer footer .footer_logo h3 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+}
+
+.front_footer footer .footer_logo p {
+    text-transform: capitalize;
+    color: #898888;
+    font-size: 14px;
+}
+
+.front_footer footer .footer_logo span {
+    color: white;
+}
+
+/* footer_nav */
+.front_footer .footer_nav {
+    padding: 5px;
+}
+
+.front_footer .footer_nav h3 {
+    padding: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.front_footer .footer_nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.front_footer .footer_nav ul li {
+    list-style: none;
+    padding: 5px;
+    border-top: 1px solid #444;
+    margin: 5px 0;
+}
+
+.front_footer .footer_nav ul li a {
+    text-decoration: none;
+    color: #898888;
+    text-transform: capitalize;
+
+}
+
+/* footer_tags */
+.front_footer .footer_tags {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 5px;
+    text-align: center;
+}
+
+.front_footer .footer_tags p {
+    text-transform: capitalize;
+    color: #898888;
+    padding: 5px;
+    background: #444;
+    border-radius: 30px;
+}
+
+.front_footer .footer_tags h3 {
+    padding: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+/* footer_news_letter */
+.footer_news_letter {
+    padding: 5px;
+}
+
+.footer_news_letter h3 {
+    padding: 5px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+.footer_news_letter p {
+    color: white;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.footer_iland {
+    border-top: 2px solid #898888;
+    padding: 10px;
+}
+
+.footer_iland .footer_iland_nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+    border: 1px solid #444;
+    margin: 5px;
+    border-radius: 2px;
+}
+
+.footer_iland .footer_iland_nav ul li a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #898888;
+}

@@ -1,0 +1,88 @@
+.front_header header {
+    padding: 5px 0;
+}
+.front_header header .small_category{
+display: flex;
+flex-wrap: wrap;
+gap: 0;
+font-size: 14px;
+justify-content: center;
+align-items: center;
+}
+.front_header header .small_category small{
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+.front_header header .small_category small:hover{
+    background-color: black;
+    color: white;
+}
+.front_header header .nav_top .nav_social {
+    padding: 0;
+}
+
+.front_header header .nav_top .nav_social ul {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.front_header header .nav_top .nav_social ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 5px;
+}
+
+.front_header header .nav_top .nav_social ul li a {
+    color: black;
+    vertical-align: middle;
+    padding: 5px;
+    border-radius: 30px;
+    text-align: center;
+    transition: .2s ease-in-out;
+}
+
+.front_header header .nav_top .nav_social ul li a:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.front_header header .nav_article {
+    margin: 0;
+    padding: 0;
+}
+
+.front_header header .nav_bottom a {
+    text-decoration: none;
+    color: black;
+    transition: .5s ease-in-out;
+    text-transform: capitalize;
+}
+
+.front_header header .nav_bottom #basic-navbar-nav a {
+    font-size: 14px;
+}
+.front_header header .nav_bottom #basic-navbar-nav a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+.front_header header .nav_bottom a.active {
+    background: black;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    transition: .5s ease-in-out;
+}
+
+.front_header header .nav_bottom .front_header_logo {
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.front_header header .nav_bottom .front_header_logo a.active {
+    background-color: transparent;
+    color: black;
+}

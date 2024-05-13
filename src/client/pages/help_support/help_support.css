@@ -1,0 +1,12 @@
+.help_support_page{
+    padding: 40px 0;
+}
+.help_support_page h1{
+    text-transform: capitalize;
+    color: #444;
+}
+.help_support_page p{
+    text-transform: capitalize;
+    font-size: 14px;
+    color: #444;
+}

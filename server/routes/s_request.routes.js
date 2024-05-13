@@ -1,0 +1,11 @@
+const express = require("express")
+const authentication = require("../middleware/authentication")
+const SRequestController = require("../controllers/s_request.controller")
+const router = express.Router()
+router.use(authentication)
+router.get("/", SRequestController.all_service_request)
+router.post("/", SRequestController.create_service_request)
+router.get("/:id", SRequestController.single_service_request)
+router.patch("/:id", SRequestController.update_service_request)
+router.delete("/:id", SRequestController.delete_service_request)
+module.exports = router;

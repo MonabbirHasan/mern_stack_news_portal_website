@@ -1,0 +1,11 @@
+.cookie_policy{
+    padding: 30px 0;
+}
+.cookie_policy h1{
+    text-transform: capitalize;
+}
+.cookie_policy p{
+    text-transform: capitalize;
+    color: #444;
+    font-size: 14px;
+}

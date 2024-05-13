@@ -1,0 +1,25 @@
+.user_management {
+    padding: 10px 0;
+}
+
+.user_management .user_management_wrapper {
+    padding: 5px;
+}
+
+.user_management .user_management_wrapper .user_management_form {
+    padding: 10px;
+    background: #eee;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    border: 2px solid #fff;
+    border-radius: 5px;
+}
+
+/* user_management_table */
+.user_management .user_management_table {
+    padding: 10px;
+    background: #eee;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    margin-top: 10px;
+}

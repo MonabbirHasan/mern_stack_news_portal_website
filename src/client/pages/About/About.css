@@ -1,0 +1,120 @@
+#about-page {
+    width: 100%;
+    padding: 0px 0;
+}
+
+#about-page .about_wrapper {
+    padding: 10px 0;
+}
+
+#about-page .about_wrapper h3 {
+    padding: 20px 0;
+}
+
+#wrape_section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.circle video {
+    width: 100%;
+    height: 100%;
+}
+
+#wrape_section p {
+    color: #000;
+    font-size: 14px;
+}
+
+#wrape_section .founder_box {
+    padding: 10px;
+}
+
+#wrape_section .founder_box .founder_info {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrape_section .founder_box .founder_info .founder_one {
+    padding: 10px;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    border: 2px solid #eee;
+}
+
+#wrape_section .founder_box .founder_info .middle_image {
+    padding: 40px 0;
+    vertical-align: middle;
+}
+
+#wrape_section .founder_box .founder_info .founder_tow {
+    padding: 10px;
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    border: 2px solid #eee;
+}
+
+#wrape_section .founder_box .founder_info .founder_one img {
+    width: 100%;
+    height: 280px;
+}
+
+#wrape_section .founder_box .founder_info .founder_tow img {
+    width: 100%;
+    height: 280px;
+}
+
+#wrape_section .founder_box .founder_info .founder_name {
+    margin: 10px 0 0 0;
+    padding: 2px 0;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#wrape_section .founder_box .founder_info .designation {
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#wrape_section .about_article {
+    padding: 10px 0;
+}
+
+#wrape_section .about_article .about_compnay_info p {
+    padding: 0 20px;
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+#wrape_section .about_article .aboutfounder p {
+    padding: 0 20px;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#wrape_section .about_article .misionVision {
+    padding: 10px 0;
+}
+
+#wrape_section .about_article .misionVision .visionmision_image_wraper {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid: 30px;
+    padding: 20px;
+}
+
+#wrape_section .about_article .misionVision .visionmision_image_wraper p {
+    padding: 50px 0;
+    vertical-align: middle;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+#wrape_section .about_article .misionVision .visionmision_image_wraper img {
+    width: auto;
+    padding: 30px;
+}

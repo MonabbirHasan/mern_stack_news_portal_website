@@ -1,0 +1,53 @@
+.contact_page {
+    padding: 30px 0;
+    width: 100%;
+}
+
+.contact_page .contact_page_wrapper {}
+
+.contact_page .contact_page_wrapper .contact_container {
+    padding: 10px;
+}
+
+.contact_page .contact_page_wrapper .contact_container .contact_left {
+    box-shadow: -2px -2px 5px #eee, 2px 2px 5px #eee;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.contact_page .contact_page_wrapper .contact_container .contact_left h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    color: #444;
+}
+
+/* contact_right */
+.contact_page .contact_page_wrapper .contact_right {
+    padding: 1px;
+    display: grid;
+    gap: 10px;
+}
+
+.contact_page .contact_page_wrapper .contact_right .contact_item {
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #eee;
+/* margin: 10px 0; */
+}
+
+.contact_page .contact_page_wrapper .contact_right .contact_item span {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    padding:0 5px;
+}
+
+.contact_page .contact_page_wrapper .contact_right .contact_item span svg {
+    font-size: 3rem;
+}
+
+.contact_page .contact_page_wrapper .contact_right .contact_item span p {
+    margin: 0;
+    padding: 0;
+}
