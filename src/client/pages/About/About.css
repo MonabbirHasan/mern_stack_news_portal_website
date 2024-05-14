@@ -58,11 +58,13 @@
 #wrape_section .founder_box .founder_info .founder_one img {
     width: 100%;
     height: 280px;
+    border-radius: 10px;
 }
 
 #wrape_section .founder_box .founder_info .founder_tow img {
     width: 100%;
     height: 280px;
+    border-radius: 10px;
 }
 
 #wrape_section .founder_box .founder_info .founder_name {

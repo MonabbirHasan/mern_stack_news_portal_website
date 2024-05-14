@@ -1,0 +1,24 @@
+.admin_dashboard {
+    padding: 30px 0;
+}
+
+.admin_dashboard .admin_dashboard_wrapper {
+    padding: 20px;
+}
+
+.admin_dashboard .admin_dashboard_wrapper .feature_card {
+    padding: 30px;
+    border: 3px solid #fff;
+    background: linear-gradient(to right, #eff0f2, #fefefe);
+    box-shadow: 5px 0 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-transform: capitalize;
+    margin: 5px 0;
+}
+
+.admin_dashboard .admin_dashboard_wrapper .feature_card h1 {
+    text-align: left;
+    font-size: 3em;
+    color: #444;
+    font-weight: 900;
+}

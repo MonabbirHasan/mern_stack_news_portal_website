@@ -8,6 +8,7 @@ import { Blocks, ThreeDots } from 'react-loader-spinner'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { Button } from '@mui/material'
 import { toast } from 'react-toastify'
+import page_not_found from "../../../assets/img/page_not_found.svg"
 const Header = lazy(() => import("../../components/common/header/Header"))
 const Footer = lazy(() => import("../../components/common/footer/Footer"))
 const Home = () => {
@@ -196,7 +197,7 @@ const Home = () => {
                                                     wrapperClass=""
                                                 />
                                             </section> :
-                                                AllPosts.map((items) => (
+                                                AllPosts ? AllPosts.map((items) => (
                                                     <Col>
                                                         <PostCard
                                                             post_id={items.post_id}
@@ -211,7 +212,13 @@ const Home = () => {
                                                             description={<div dangerouslySetInnerHTML={{ __html: items.post_description.slice(0, 140) + "..." }} />}
                                                         />
                                                     </Col>
-                                                ))
+                                                )) : (<section style={{
+                                                    display: 'flex',
+                                                    justifyContent: 'center',
+                                                    alignItems: 'center'
+                                                }}>
+                                                    <img src={page_not_found} alt="" />
+                                                </section>)
                                         }
                                     </Row>
                                 </div>
@@ -240,7 +247,7 @@ const Home = () => {
                                                 <div className="category_item" key={category.category_id}>
                                                     <h4 className='category_post_title'>{category.category_name}</h4>
                                                     <Row lg={3}>
-                                                        {AllPosts.filter(post => post.post_category !== category.category_id).map(post => (
+                                                        {AllPosts ? AllPosts.filter(post => post.post_category !== category.category_id).map(post => (
                                                             <Col key={post.post_id}>
                                                                 <PostCard
                                                                     post_id={post.post_id}
@@ -253,7 +260,13 @@ const Home = () => {
                                                                     description={<div dangerouslySetInnerHTML={{ __html: post.post_description.slice(0, 140) + "..." }} />}
                                                                 />
                                                             </Col>
-                                                        ))}
+                                                        )) : (<section style={{
+                                                            display: 'flex',
+                                                            justifyContent: 'center',
+                                                            alignItems: 'center'
+                                                        }}>
+                                                            <img src={page_not_found} alt="" />
+                                                        </section>)}
                                                     </Row>
                                                 </div>
                                             ))}
@@ -369,7 +382,7 @@ const Home = () => {
                                                     wrapperClass=""
                                                 />
                                             </section> :
-                                                AllPosts.slice(0, 3).reverse().map((items) => (
+                                                AllPosts ? AllPosts.slice(0, 3).reverse().map((items) => (
                                                     <PostCard
                                                         post_id={items.post_id}
                                                         thumbnail={`${import.meta.env.VITE_IMAGE_ROOT_URI}/blog_img/${items.post_thumbnail}`}
@@ -382,7 +395,13 @@ const Home = () => {
                                                         }
                                                         description={<div dangerouslySetInnerHTML={{ __html: items.post_description.slice(0, 140) + "..." }} />}
                                                     />
-                                                ))
+                                                )) : (<section style={{
+                                                    display: 'flex',
+                                                    justifyContent: 'center',
+                                                    alignItems: 'center'
+                                                }}>
+                                                    <img src={page_not_found} alt="" />
+                                                </section>)
                                         }
                                     </div>
                                 </div>

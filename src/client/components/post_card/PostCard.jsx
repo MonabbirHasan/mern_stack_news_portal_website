@@ -22,7 +22,7 @@ const PostCard = (props) => {
       <div className="post_title">
         <h4 onClick={() => {
           navigate(`/${slug_generate(props.title)}`, { state: { post_id: props.post_id } })
-        }}> {props.title}</h4>
+        }}> {props.title.slice(0,100)+"..."}</h4>
       </div>
       <div className="post_info">
         <span><Person htmlColor='#444' fontSize='small' /><small>{props.author_name}</small></span>

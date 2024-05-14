@@ -1,0 +1,15 @@
+.login_page{
+    padding: 30px 0;
+}
+.login_page .login_form_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.login_page .login_form_wrapper .login_form{
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: -2px -2px 5px #eee,2px 2px 5px #eee;
+    border-radius: 10px;
+}
