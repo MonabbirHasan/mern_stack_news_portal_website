@@ -1,0 +1,64 @@
+.product_card {
+    padding: 10px;
+    background: linear-gradient(90deg, #eff0f2, #fefefe);
+    /* box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2); */
+
+    border: 3px solid #fff;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+.product_card:hover {
+    background: #fefefe;
+    box-shadow:
+        inset -2px -2px 3px rgba(0, 0, 0, 0.1),
+        5px 5px 3px rgba(0, 0, 0, 0.1),
+        inset 2px 2px 3px rgba(0, 0, 0, 0.1),
+        -5px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.product_card .product_thumb img {
+    width: 100%;
+    height: auto;
+}
+
+.product_card .product_subtitle {
+    text-transform: capitalize;
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.product_card .product_title {
+    padding: 6px 0;
+    display: flex;
+    gap: 20px;
+    text-transform: capitalize;
+    color: #444;
+}
+
+.product_card .product_title h4 {
+    font-size: 16px;
+}
+
+.product_card .product_title h4:last-child {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.product_card .product_action {
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.product_card .product_action button {
+    text-transform: capitalize;
+    background: linear-gradient(to right, #eff0f2, #fefefe);
+    box-shadow: 1px 0 3px rgba(0, 0, 0, 0.2);
+    border: 2px solid #fff;
+
+}

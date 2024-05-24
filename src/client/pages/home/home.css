@@ -161,7 +161,10 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
+.right_sidebar .follow_us .follow_item a{
+    text-decoration: none;
+    color: white;
+}
 .right_sidebar .follow_us .follow_item:hover {
     background: #333;
 }

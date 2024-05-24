@@ -1,6 +1,8 @@
 import React, { createContext, useState, useEffect, useContext } from 'react';
+import ApiClient from '../../../utils/ApiClient/ApiClient';
+import { toast } from 'react-toastify';
 
-
+const ClientApi = new ApiClient(import.meta.env.VITE_API_ROOT_URI)
 // Create AuthContext
 const AuthContext = createContext();
 
@@ -15,7 +17,7 @@ const AuthProvider = ({ children }) => {
             setIsAuthenticated(false); // No token found, user is not authenticated
             return;
         }
-        const tokenData =token; // Decode token payload
+        const tokenData = token; // Decode token payload
         const currentTime = Math.floor(Date.now() / 1000); // Current time in seconds
         if (currentTime > tokenData.exp) {
             setIsAuthenticated(false); // Token expired
@@ -27,10 +29,14 @@ const AuthProvider = ({ children }) => {
     }, []);
 
     // Function to handle logout
-    const logout = () => {
+    const logout = async () => {
         localStorage.removeItem('npl');
         setIsAuthenticated(false);
-        window.location.href="/admin"
+        window.location.href = "/admin"
+        const response = await ClientApi.create(`api/users/logout`, "", import.meta.env.VITE_API_ACCESS_KEY);
+        if (response.status === 200) {
+            toast.success("SuccessFully LogOut")
+        }
     };
 
     return (

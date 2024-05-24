@@ -1,7 +1,7 @@
 import React, { lazy, useEffect, useState } from 'react'
 import "./home.css"
 import { Badge, Carousel, Col, Container, Form, Row } from 'react-bootstrap'
-import { Facebook, Google, Instagram, Twitter } from '@mui/icons-material'
+import { Facebook, Google, Instagram, LinkedIn, Twitter } from '@mui/icons-material'
 import ApiClient from "../../../utils/ApiClient/ApiClient"
 import PostCard from '../../components/post_card/PostCard'
 import { Blocks, ThreeDots } from 'react-loader-spinner'
@@ -247,7 +247,7 @@ const Home = () => {
                                                 <div className="category_item" key={category.category_id}>
                                                     <h4 className='category_post_title'>{category.category_name}</h4>
                                                     <Row lg={3}>
-                                                        {AllPosts ? AllPosts.filter(post => post.post_category !== category.category_id).map(post => (
+                                                        {AllPosts ? AllPosts.slice(0, 3).filter(post => post.post_category !== category.category_id).map(post => (
                                                             <Col key={post.post_id}>
                                                                 <PostCard
                                                                     post_id={post.post_id}
@@ -283,24 +283,34 @@ const Home = () => {
                                         <h4>follow us</h4>
                                         <div className="social_media">
                                             <div className='follow_item'>
-                                                <span><Twitter htmlColor='#1DA1F2' /></span>
-                                                <p>23.3k</p>
-                                                <p>followers</p>
+                                                <a href="https://twitter.com/itLenex">
+                                                    <span><Twitter htmlColor='#1DA1F2' /></span>
+                                                    <p>4.3k</p>
+                                                    <p>followers</p>
+                                                </a>
                                             </div>
                                             <div className='follow_item'>
-                                                <span><Instagram htmlColor='#833AB4' /></span>
-                                                <p>23.3k</p>
-                                                <p>followers</p>
+                                                <a href="https://www.instagram.com/lenex.it">
+                                                    <span><Instagram htmlColor='#833AB4' /></span>
+                                                    <p>2.3k</p>
+                                                    <p>followers</p>
+                                                </a>
                                             </div>
                                             <div className='follow_item'>
-                                                <span><Facebook htmlColor='#1877F2' /></span>
-                                                <p>23.3k</p>
-                                                <p>followers</p>
+                                                <a href="https://www.facebook.com/itlenex">
+                                                    <span><Facebook htmlColor='#1877F2' /></span>
+                                                    <p>3.3k</p>
+                                                    <p>followers</p>
+                                                </a>
                                             </div>
                                             <div className='follow_item'>
-                                                <span><Google htmlColor='#4285F4' /></span>
-                                                <p>23.3k</p>
-                                                <p>followers</p>
+                                                <a href="https://www.linkedin.com/company/lenexit">
+                                                    <span>
+                                                        <LinkedIn htmlColor='#4285F4' />
+                                                    </span>
+                                                    <p>1.3k</p>
+                                                    <p>followers</p>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

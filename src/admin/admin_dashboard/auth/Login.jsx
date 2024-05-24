@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react'
 import { Container, Form, InputGroup } from 'react-bootstrap'
 import "./login.css"
-import { Alert, Button, FormControl, IconButton, Typography } from '@mui/material'
-import { Visibility } from '@mui/icons-material'
-import { toast } from 'react-toastify'
+import { Alert, Avatar, Button, FormControl, IconButton, Typography } from '@mui/material'
 import ApiClient from '../../../utils/ApiClient/ApiClient'
-import { jwtDecode } from "jwt-decode";
-import { useNavigate } from 'react-router-dom'
+import Logo from "../../../assets/img/favicon1.png"
 import { Hourglass } from 'react-loader-spinner'
+import { Visibility } from '@mui/icons-material'
+import { useNavigate } from 'react-router-dom'
 import { useAuth } from './AuthContext'
+import { jwtDecode } from "jwt-decode";
+import { toast } from 'react-toastify'
 const Login = () => {
     const navigate = useNavigate()
     const { isAuthenticated } = useAuth()
@@ -31,7 +32,7 @@ const Login = () => {
         return Object.keys(errors).length > 0
     }
     useEffect(() => {
-        if (isAuthenticated) {
+        if (localStorage.getItem('npl')) {
             return navigate("/admin/dashboard")
         }
     }, [isAuthenticated])
@@ -45,23 +46,31 @@ const Login = () => {
                     user_email: Email,
                     user_password: Password
                 }
-                const response = await ClientApi.create(`api/users/login`, data, import.meta.env.VITE_API_ACCESS_KEY)
-                if (response.status === 200) {
-                    const decoded = jwtDecode(response.data.token);
-                    localStorage.setItem("npl", JSON.stringify(decoded))
-                    toast.success("Your Are Logged In")
-                    if (decoded) {
-                        setTimeout(() => {
-                            navigate("/admin/dashboard")
-                            setLoader(false)
-                            console.log(decoded)
-                        }, 2000);
+                try {
+                    const response = await ClientApi.create(`api/users/login`, data, import.meta.env.VITE_API_ACCESS_KEY)
+                    if (response.status === 200) {
+                        const decoded = jwtDecode(response.data.token);
+                        localStorage.setItem("npl", JSON.stringify(decoded))
+                        toast.success("Your Are Logged In")
+                        if (decoded) {
+                            setTimeout(() => {
+                                navigate("/admin/dashboard")
+                                setLoader(false)
+                            }, 2000);
+                        }
+                        setPassword("")
+                        setEmail("")
                     }
-                    setPassword("")
-                    setEmail("")
+                } catch (error) {
+                    setLoader(false)
+                    if (error.response.status === 409) {
+                        toast.error("UnAutorized || Email Or Password")
+                    }
                 }
+
             } else {
                 toast.error("Form Not Valid")
+                setLoader(false)
             }
         } catch (error) {
             setLoader(false)
@@ -75,7 +84,10 @@ const Login = () => {
             <Container>
                 <div className="login_form_wrapper">
                     <div className="login_form">
-                        <Typography variant='h4' color={"#444"} textAlign={'left'} pb={2}>Login</Typography>
+                        <div style={{ textAlign: "center" }}>
+                            <Avatar src={Logo} sx={{ margin: 'auto' }} />
+                            <p style={{ fontSize: '2rem', fontWeight: 'bold', color: '#111', verticalAlign: 'middle' }}>Login</p>
+                        </div>
                         <FormControl fullWidth sx={{ py: 1 }}>
                             <Form.Label>Your Email</Form.Label>
                             <Form.Control onChange={(e) => setEmail(e.target.value)} value={Email} type='email' required />
@@ -93,7 +105,7 @@ const Login = () => {
                             </InputGroup>
                             {error.Password && <Alert color='error'>{error.Password}</Alert>}
                         </FormControl>
-                        <Button type='submit' onClick={LoginHandler} sx={{ mt: 1 }} variant='contained' size='small'>Login</Button>
+                        <Button disabled={loader} type='submit' onClick={LoginHandler} sx={{ mt: 1 }} variant='contained' size='small'>Login</Button>
                     </div>
                 </div>
             </Container>

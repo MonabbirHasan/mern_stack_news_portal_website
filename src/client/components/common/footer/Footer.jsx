@@ -2,9 +2,13 @@ import React from 'react'
 import "./footer.css"
 import { Col, Container, Form, Row } from 'react-bootstrap'
 import { Button, Chip, IconButton } from '@mui/material'
-import { Facebook, Google, Instagram, Twitter } from '@mui/icons-material'
+import { Facebook, Google, Instagram, LinkedIn, Mail, Twitter } from '@mui/icons-material'
 import { NavLink } from 'react-router-dom'
 const Footer = () => {
+  const opne_social_window = (url) => {
+    window.open(url)
+  }
+  const opne_mail_window = (mail) => { }
   return (
     <div className='front_footer'>
       <footer>
@@ -18,10 +22,15 @@ const Footer = () => {
                 </p>
               </div>
               <div className="footer_social">
-                <span><IconButton><Facebook htmlColor='white' /></IconButton></span>
-                <span><IconButton><Twitter htmlColor='white' /></IconButton></span>
-                <span><IconButton><Google htmlColor='white' /></IconButton></span>
-                <span><IconButton><Instagram htmlColor='white' /></IconButton></span>
+                <span><IconButton onClick={() => opne_social_window(`https://www.facebook.com/itlenex`)}><Facebook htmlColor='white' /></IconButton></span>
+                <span><IconButton onClick={() => opne_social_window(`https://twitter.com/itLenex`)}><Twitter htmlColor='white' /></IconButton></span>
+                <span><IconButton onClick={() => opne_mail_window(`itlenex@gmail.com`)}>
+                  <a href='mailto:itlenex@gmail.com' style={{ marginBottom: '6px', display: "inline-block" }}>
+                    <Mail htmlColor='white' />
+                  </a>
+                </IconButton></span>
+                <span><IconButton onClick={() => opne_social_window(`https://www.instagram.com/lenex.it`)}><Instagram htmlColor='white' /></IconButton></span>
+                <span><IconButton onClick={() => opne_social_window(`https://www.linkedin.com/company/lenexit`)}><LinkedIn htmlColor='white' /></IconButton></span>
               </div>
             </Col>
             <Col>
@@ -76,7 +85,7 @@ const Footer = () => {
             <Row>
               <Col lg={6}>
                 <p style={{ textTransform: "capitalize", color: 'white', fontSize: "14px" }}>
-                  copyright 2023-2024 <a style={{ color: "#898888", }} href='https://lenexit.com'>Lenexit</a> all rights reserved
+                  @copyright 2023-2024 <a style={{ color: "#898888", }} href='https://lenexit.com'>Lenexit</a> all rights reserved
                 </p>
               </Col>
               <Col lg={6}>

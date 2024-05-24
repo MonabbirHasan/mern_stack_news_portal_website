@@ -140,8 +140,8 @@ const Contact = () => {
                       <Stack direction={'row'} spacing={2}>
                         <span><Apartment fontSize='large' htmlColor='dodgerblue' /></span>
                         <span>
-                          <p>Dhaka/Bangladesh</p>
-                          <small>56/8, Rocky beach road</small>
+                          <p>Shaheb Bazar/Rajshahi</p>
+                          <small>Boalia, GPO-6000</small>
                         </span>
                       </Stack>
                     </div>
@@ -158,13 +158,13 @@ const Contact = () => {
                       <Stack direction={'row'} spacing={2}>
                         <span><Apartment fontSize='large' htmlColor='dodgerblue' /></span>
                         <span>
-                          <p>support@blog.com</p>
+                          <p>contact@lenexit.com</p>
                           <small>Send us your query</small>
                         </span>
                       </Stack>
                     </div>
                     <div className="contact_item map">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3562.836800188109!2d77.06345987482196!3d26.74958356708309!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39722f24636eec3b%3A0x376574849c4bad59!2sOmniFluxs!5e0!3m2!1sen!2sbd!4v1715301046046!5m2!1sen!2sbd" width="100%" height="300px" style={{ border: '0' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7268.962995758459!2d88.59440444027543!3d24.364547936376123!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39fbef959df5df87%3A0xfc4cc04b1eff3bab!2sSaheb%20Bazar%20Zero%20Point!5e0!3m2!1sen!2sbd!4v1716466792152!5m2!1sen!2sbd" width="100%" height="300px" style={{ border: '0' }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                   </div>
                 </Col>

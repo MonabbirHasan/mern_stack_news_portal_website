@@ -292,7 +292,7 @@ const PostDetails = () => {
                                                         <img src={`${import.meta.env.VITE_IMAGE_ROOT_URI}/blog_img/${items.post_thumbnail}`} alt="" />
                                                     </div>
                                                     <div className="h_post_detail">
-                                                        <p onClick={() => navigate(`/${slug_generate(items.post_title)}`, { state: { post_id: items.post_id } })}>{items.post_title}</p>
+                                                        <p onClick={() => navigate(`/${slug_generate(items.post_title)}`, { state: { post_id: items.post_id } })}>{items.post_title ? items.post_title.slice(0, 50)+"..." : "title not provided"}</p>
                                                         <div className="h_post_info">
                                                             <span><CalendarMonth fontSize='small' /> <small>{items.post_published}</small></span>
                                                             <span><Comment fontSize='small' /> <small>343</small></span>
@@ -334,7 +334,7 @@ const PostDetails = () => {
                                                         <img src={`${import.meta.env.VITE_IMAGE_ROOT_URI}/blog_img/${items.post_thumbnail}`} alt="" />
                                                     </div>
                                                     <div className="h_post_detail">
-                                                        <p onClick={() => navigate(`/${slug_generate(items.post_title)}`, { state: { post_id: items.post_id } })}>{items.post_title}</p>
+                                                        <p onClick={() => navigate(`/${slug_generate(items.post_title)}`, { state: { post_id: items.post_id } })}>{items.post_title ? items.post_title.slice(0, 50)+"..." : "title not provided"}</p>
                                                         <div className="h_post_info">
                                                             <span><CalendarMonth fontSize='small' /> <small>{items.post_published}</small></span>
                                                             <span><Comment fontSize='small' /> <small>343</small></span>
@@ -546,7 +546,7 @@ const PostDetails = () => {
                                                         <img src={`${import.meta.env.VITE_IMAGE_ROOT_URI}/blog_img/${items.post_thumbnail}`} alt="" />
                                                     </div>
                                                     <div className="h_post_detail">
-                                                        <p onClick={() => navigate(`/${slug_generate(items.post_title)}`, { state: { post_id: items.post_id } })}>{items.post_title}</p>
+                                                        <p onClick={() => navigate(`/${slug_generate(items.post_title)}`, { state: { post_id: items.post_id } })}>{items.post_title ? items.post_title.slice(0, 50)+"..." : "title not provided"}</p>
                                                         <div className="h_post_info">
                                                             <span><CalendarMonth fontSize='small' /> <small>{items.post_published}</small></span>
                                                             <span><Comment fontSize='small' /> <small>343</small></span>

@@ -23,7 +23,6 @@ const AdminSidebar = () => {
     useEffect(() => {
         if (localStorage.getItem("npl")) {
             setUser(JSON.parse(localStorage.getItem("npl")).user)
-            console.log("user", user)
         }
     }, [])
     //SAVE PAGE STATE TO LOCAL STORAGE
@@ -39,7 +38,7 @@ const AdminSidebar = () => {
         OpenAdminDrawer == false ? setOpenAdminDrawer(true) : setOpenAdminDrawer(false)
     }
     useEffect(() => {
-        if (!isAuthenticated) {
+        if (!localStorage.getItem('npl')) {
             return navigate("/admin")
         }
     }, [isAuthenticated])
