@@ -19,7 +19,7 @@ const Service = () => {
                   <NavLink to={"/service_request"}>
                     <div className="service_item">
                       <span>
-                        <Avatar><Web htmlColor="green" /></Avatar>
+                        <Avatar sx={{background:"green"}}><Web htmlColor="white" /></Avatar>
                       </span>
                       <h3 className="service_title">web development</h3>
                       <p>Lenexit offers full-stack web development services, delivering end-to-end solutions that encompass front-end and back-end expertise for seamless digital experiences.</p>
@@ -32,8 +32,8 @@ const Service = () => {
                   <NavLink to={"/service_request"}>
                     <div className="service_item">
                       <span>
-                        <Avatar>
-                          <Android htmlColor="green" />
+                        <Avatar sx={{background:"green"}}>
+                          <Android htmlColor="white" />
                         </Avatar>
                       </span>
                       <h3 className="service_title">android & ios mobile app development</h3>
@@ -47,8 +47,8 @@ const Service = () => {
                   <NavLink to={"/service_request"}>
                     <div className="service_item">
                       <span>
-                        <Avatar>
-                          <DesktopWindows htmlColor="green" />
+                        <Avatar sx={{background:"green"}}>
+                          <DesktopWindows htmlColor="white" />
                         </Avatar>
                       </span>
                       <h3 className="service_title">Custom software development</h3>
@@ -62,8 +62,8 @@ const Service = () => {
                   <NavLink to={"/service_request"}>
                     <div className="service_item">
                       <span>
-                        <Avatar>
-                          <SettingsAccessibility htmlColor="green" />
+                        <Avatar sx={{background:"green"}}>
+                          <SettingsAccessibility htmlColor="white" />
                         </Avatar>
                       </span>
                       <h3 className="service_title">Custom Plugin Development</h3>
@@ -77,8 +77,8 @@ const Service = () => {
                   <NavLink to={"/service_request"}>
                     <div className="service_item">
                       <span>
-                        <Avatar>
-                          <MobileFriendly htmlColor="green" />
+                        <Avatar sx={{background:"green"}}>
+                          <MobileFriendly htmlColor="white" />
                         </Avatar>
                       </span>
                       <h3 className="service_title">Developing an on-demand application</h3>
@@ -92,8 +92,8 @@ const Service = () => {
                   <NavLink to={"/service_request"}>
                     <div className="service_item">
                       <span>
-                        <Avatar>
-                          <BrandingWatermark htmlColor="green" />
+                        <Avatar sx={{background:"green"}}>
+                          <BrandingWatermark htmlColor="white" />
                         </Avatar>
                       </span>
                       <h3 className="service_title">AI automation service for business</h3>

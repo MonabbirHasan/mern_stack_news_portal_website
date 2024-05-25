@@ -1,8 +1,8 @@
 import React from 'react'
 import "./footer.css"
 import { Col, Container, Form, Row } from 'react-bootstrap'
-import { Button, Chip, IconButton } from '@mui/material'
-import { Facebook, Google, Instagram, LinkedIn, Mail, Twitter } from '@mui/icons-material'
+import { Button, IconButton } from '@mui/material'
+import { Facebook, Instagram, LinkedIn, Mail, Twitter } from '@mui/icons-material'
 import { NavLink } from 'react-router-dom'
 const Footer = () => {
   const opne_social_window = (url) => {
@@ -18,7 +18,7 @@ const Footer = () => {
               <div className="footer_logo">
                 <h3>blogs</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi officiis natus vero laudantium ut esse reiciendis, voluptas eius, facere dignissimos excepturi cumque ratione, reprehenderit explicabo dolore adipisci tenetur fugit maxime.
+                  We offer innovative services like web and mobile app development, SEO, UI/UX design, and penetration testing. Our exceptional support ensures ongoing assistance and guidance, building lasting client relationships for continued success.
                 </p>
               </div>
               <div className="footer_social">
@@ -38,22 +38,22 @@ const Footer = () => {
                 <h3>Quick Menu</h3>
                 <ul>
                   <li>
-                    <NavLink>Service</NavLink>
+                    <NavLink to="/service">Service</NavLink>
                   </li>
                   <li>
-                    <NavLink>About Us</NavLink>
+                    <NavLink to="/about">About Us</NavLink>
                   </li>
                   <li>
-                    <NavLink>Tools</NavLink>
+                    <NavLink to="/admin_template">Tools</NavLink>
                   </li>
                   <li>
-                    <NavLink>Theme</NavLink>
+                    <NavLink to="/wp_theme">Theme</NavLink>
                   </li>
                   <li>
-                    <NavLink>Plugin</NavLink>
+                    <NavLink to="/wp_plugin">Plugin</NavLink>
                   </li>
                   <li>
-                    <NavLink>Contact Us</NavLink>
+                    <NavLink to="/contact">Contact Us</NavLink>
                   </li>
                 </ul>
               </div>
@@ -68,13 +68,16 @@ const Footer = () => {
                 <p>Marketing</p>
                 <p>SEO</p>
                 <p>Wordpress</p>
+                <p>template</p>
                 <p>AI</p>
+                <p>Theme</p>
+                <p>plugin</p>
                 <p>Support</p>
               </div>
             </Col>
             <Col>
               <div className="footer_news_letter">
-                <h3>newletter</h3>
+                <h3>newsletter</h3>
                 <p>subscribe to join our newsletter teams</p>
                 <Form.Control placeholder='Enter Your Email!' />
                 <Button variant='outlined' color='error' sx={{ mt: 1 }}>subscribe</Button>
@@ -84,7 +87,7 @@ const Footer = () => {
           <div className="footer_iland">
             <Row>
               <Col lg={6}>
-                <p style={{ textTransform: "capitalize", color: 'white', fontSize: "14px" }}>
+                <p style={{ textTransform: "capitalize", color: 'white', fontSize: "14px", marginTop: "20px" }}>
                   @copyright 2023-2024 <a style={{ color: "#898888", }} href='https://lenexit.com'>Lenexit</a> all rights reserved
                 </p>
               </Col>

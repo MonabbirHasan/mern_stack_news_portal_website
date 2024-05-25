@@ -13,92 +13,92 @@ const ProductCard = (props) => {
     const RatingProviver = (ratings) => {
         return ratings == 1 ?
             <>
-                <Star htmlColor='orange' />
-                <StarOutline htmlColor='orange' />
-                <StarOutline htmlColor='orange' />
-                <StarOutline htmlColor='orange' />
-                <StarOutline htmlColor='orange' />
+                <Star htmlColor='orange' fontSize='small' />
+                <StarOutline htmlColor='orange' fontSize='small' />
+                <StarOutline htmlColor='orange' fontSize='small' />
+                <StarOutline htmlColor='orange' fontSize='small' />
+                <StarOutline htmlColor='orange' fontSize='small' />
             </>
             :
             ratings == 1.5 ?
                 <>
-                    <Star htmlColor='orange' />
-                    <StarHalf htmlColor='orange' />
-                    <StarOutline htmlColor='orange' />
-                    <StarOutline htmlColor='orange' />
-                    <StarOutline htmlColor='orange' />
+                    <Star htmlColor='orange' fontSize='small' />
+                    <StarHalf htmlColor='orange' fontSize='small' />
+                    <StarOutline htmlColor='orange' fontSize='small' />
+                    <StarOutline htmlColor='orange' fontSize='small' />
+                    <StarOutline htmlColor='orange' fontSize='small' />
                 </>
                 :
                 ratings == 2 ?
                     <>
-                        <Star htmlColor='orange' />
-                        <Star htmlColor='orange' />
-                        <StarOutline htmlColor='orange' />
-                        <StarOutline htmlColor='orange' />
-                        <StarOutline htmlColor='orange' />
+                        <Star htmlColor='orange' fontSize='small' />
+                        <Star htmlColor='orange' fontSize='small' />
+                        <StarOutline htmlColor='orange' fontSize='small' />
+                        <StarOutline htmlColor='orange' fontSize='small' />
+                        <StarOutline htmlColor='orange' fontSize='small' />
                     </>
                     :
                     ratings == 2.5 ?
                         <>
-                            <Star htmlColor='orange' />
-                            <Star htmlColor='orange' />
-                            <StarHalf htmlColor='orange' />
-                            <StarOutline htmlColor='orange' />
-                            <StarOutline htmlColor='orange' />
+                            <Star htmlColor='orange' fontSize='small' />
+                            <Star htmlColor='orange' fontSize='small' />
+                            <StarHalf htmlColor='orange' fontSize='small' />
+                            <StarOutline htmlColor='orange' fontSize='small' />
+                            <StarOutline htmlColor='orange' fontSize='small' />
                         </>
                         :
                         ratings == 3 ?
                             <>
-                                <Star htmlColor='orange' />
-                                <Star htmlColor='orange' />
-                                <Star htmlColor='orange' />
-                                <StarOutline htmlColor='orange' />
-                                <StarOutline htmlColor='orange' />
+                                <Star htmlColor='orange' fontSize='small' />
+                                <Star htmlColor='orange' fontSize='small' />
+                                <Star htmlColor='orange' fontSize='small' />
+                                <StarOutline htmlColor='orange' fontSize='small' />
+                                <StarOutline htmlColor='orange' fontSize='small' />
                             </>
                             :
                             ratings == 3.5 ?
                                 <>
-                                    <Star htmlColor='orange' />
-                                    <Star htmlColor='orange' />
-                                    <Star htmlColor='orange' />
-                                    <StarHalf htmlColor='orange' />
-                                    <StarOutline htmlColor='orange' />
+                                    <Star htmlColor='orange' fontSize='small' />
+                                    <Star htmlColor='orange' fontSize='small' />
+                                    <Star htmlColor='orange' fontSize='small' />
+                                    <StarHalf htmlColor='orange' fontSize='small' />
+                                    <StarOutline htmlColor='orange' fontSize='small' />
                                 </>
                                 :
                                 ratings == 4 ?
                                     <>
-                                        <Star htmlColor='orange' />
-                                        <Star htmlColor='orange' />
-                                        <Star htmlColor='orange' />
-                                        <Star htmlColor='orange' />
-                                        <StarOutline htmlColor='orange' />
+                                        <Star htmlColor='orange' fontSize='small' />
+                                        <Star htmlColor='orange' fontSize='small' />
+                                        <Star htmlColor='orange' fontSize='small' />
+                                        <Star htmlColor='orange' fontSize='small' />
+                                        <StarOutline htmlColor='orange' fontSize='small' />
                                     </>
                                     :
                                     ratings == 4.5 ?
                                         <>
-                                            <Star htmlColor='orange' />
-                                            <Star htmlColor='orange' />
-                                            <Star htmlColor='orange' />
-                                            <Star htmlColor='orange' />
-                                            <StarHalf htmlColor='orange' />
+                                            <Star htmlColor='orange' fontSize='small' />
+                                            <Star htmlColor='orange' fontSize='small' />
+                                            <Star htmlColor='orange' fontSize='small' />
+                                            <Star htmlColor='orange' fontSize='small' />
+                                            <StarHalf htmlColor='orange' fontSize='small' />
 
                                         </>
                                         :
                                         ratings == 5 ?
                                             <>
-                                                <Star htmlColor='orange' />
-                                                <Star htmlColor='orange' />
-                                                <Star htmlColor='orange' />
-                                                <Star htmlColor='orange' />
-                                                <Star htmlColor='orange' />
+                                                <Star htmlColor='orange' fontSize='small' />
+                                                <Star htmlColor='orange' fontSize='small' />
+                                                <Star htmlColor='orange' fontSize='small' />
+                                                <Star htmlColor='orange' fontSize='small' />
+                                                <Star htmlColor='orange' fontSize='small' />
                                             </>
                                             :
                                             <>
-                                                <StarOutline htmlColor='orange' />
-                                                <StarOutline htmlColor='orange' />
-                                                <StarOutline htmlColor='orange' />
-                                                <StarOutline htmlColor='orange' />
-                                                <StarOutline htmlColor='orange' />
+                                                <StarOutline htmlColor='orange' fontSize='small' />
+                                                <StarOutline htmlColor='orange' fontSize='small' />
+                                                <StarOutline htmlColor='orange' fontSize='small' />
+                                                <StarOutline htmlColor='orange' fontSize='small' />
+                                                <StarOutline htmlColor='orange' fontSize='small' />
                                             </>
     }
     return (
@@ -125,14 +125,16 @@ const ProductCard = (props) => {
                     fullWidth
                     variant='outlined'
                     size='small'
+                    startIcon={props.btnOneIcon}
                     onClick={() => navigate(`${import.meta.env.VITE_API_ROOT_URI}/${props.tmp_details}`)}
-                >Template Details</Button>
+                >{props.btn_titleOne}</Button>
                 <Button
                     fullWidth
                     variant='outlined'
                     size='small'
                     onClick={() => live_window(props.live_url)}
-                >LIve preveiw</Button>
+                    startIcon={props.btnTowIcon}
+                >{props.btn_titleTow}</Button>
             </div>
         </div>
     )

@@ -24,12 +24,23 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: rgb(255, 255, 255, 0.3);
     z-index: 1;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.admin_tmp_details_page .admin_tmp_details_page_wrapper .admin_tmp_details .adm_tmp_live_link button {
+    display: none;
+}
+
+.admin_tmp_details_page .admin_tmp_details_page_wrapper .admin_tmp_details .adm_tmp_live_link:hover {
+    background: rgb(255, 255, 255, 0.3);
+}
+
+.admin_tmp_details_page .admin_tmp_details_page_wrapper .admin_tmp_details .adm_tmp_live_link:hover button {
+    display: block;
 }
 
 .admin_tmp_details_page .admin_tmp_details_page_wrapper .adm_tmp_details_content {

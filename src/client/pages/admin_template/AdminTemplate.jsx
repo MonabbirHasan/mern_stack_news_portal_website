@@ -1,12 +1,12 @@
 import React, { lazy, useState } from 'react'
-import admin_template_banner from "../../../assets/img/admin_template_banner.png"
+import admin_template_banner from "../../../assets/img/admin-dashboard.webp"
 const Header = lazy(() => import("../../components/common/header/Header"))
 const Footer = lazy(() => import("../../components/common/footer/Footer"))
 import { Accordion, Col, Container, Offcanvas, Row, } from 'react-bootstrap'
-import "./admin_template.css"
-import { Sort } from '@mui/icons-material'
 import { Button, FormControl, FormControlLabel, IconButton, Radio, RadioGroup, Tab, Tabs } from '@mui/material'
 import ProductCard from '../../components/product_card/ProductCard'
+import { Sort } from '@mui/icons-material'
+import "./admin_template.css"
 const AdminTemplate = () => {
     const [ShowFilterSidebar, setShowFilterSidebar] = useState(false);
     const [TabsValue, setTabsValue] = useState(1);
@@ -27,7 +27,7 @@ const AdminTemplate = () => {
                                 <Col sm={1} md={1}>
                                     <div className="admin_tmp_banner_left">
                                         <h1>
-                                            <span>Fully custom code</span> awesome UI templates
+                                            <span>Fully custom code</span> awesome admin templates
                                         </h1>
                                         <p>
                                             A collection of React, Vue, Angular, Svelte UI Admin templates,
@@ -113,6 +113,10 @@ const AdminTemplate = () => {
                                             title="responsive ecommerce admin dashboard"
                                             price={342}
                                             rating={4.5}
+                                            btn_titleOne="Template Details"
+                                            btnOneIcon={""}
+                                            btn_titleTow="Live Preview"
+                                            btnTowIcon={""}
                                         />
                                     </Col>
                                 ))}

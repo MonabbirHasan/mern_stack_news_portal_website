@@ -25,13 +25,13 @@
     text-transform: capitalize;
     font-size: 14px;
     color: #444;
+    padding: 5px;
 }
 
 .admin_template_page .admin_template_page_wrapper .admin_template_page_banner .admin_tmp_banner_left h1 {
-    padding: 5px;
     text-transform: capitalize;
     color: black;
-    font-size: 5rem;
+    font-size: 3rem;
 }
 
 .admin_template_page .admin_template_page_wrapper .admin_template_page_banner .admin_tmp_banner_left h1 span {
