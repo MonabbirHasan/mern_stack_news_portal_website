@@ -183,7 +183,7 @@ const AdminSidebar = () => {
                                     : StatePage === "advertiser_management" ? <AdvertiserManagement />
                                         : StatePage === "setting_management" ? <SettingManagement />
                                             : StatePage === "srequest_management" ? <SRequestManagement />
-                                                : "Not Found!"}
+                                                : <AdminDasboard />}
         </div>
     )
 }

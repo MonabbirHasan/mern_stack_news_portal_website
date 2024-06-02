@@ -52,7 +52,7 @@ const Header = () => {
                   <Nav.Link>
                     <NavLink to="/service">Service</NavLink>
                   </Nav.Link>
-                  <NavDropdown title="Product" id="basic-nav-dropdown">
+                  <NavDropdown hidden title="Product" id="basic-nav-dropdown">
                     <NavDropdown.Item>
                       <NavLink to="/website_template">Website templates</NavLink>
                     </NavDropdown.Item>
@@ -88,11 +88,12 @@ const Header = () => {
           </Navbar>
           <div className="small_category">
             {
+              // {items.category_sub !== 0 ? "-" : ""}
               AllCategory.map((items, index) => (
                 <span>
                   <small onClick={() => {
                     navigate(`/category/${items.category_name}`, { state: { c_id: items.category_id } })
-                  }}>{items.category_sub !== 0 ? "-" : ""}{items.category_name}</small>
+                  }}>{items.category_name}</small>
                 </span>
 
               ))

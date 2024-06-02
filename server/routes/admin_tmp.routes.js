@@ -1,0 +1,11 @@
+const express = require("express")
+const authentication = require("../middleware/authentication")
+const AdminTmpController = require("../controllers/admin_tmp.controller")
+const router = express.Router()
+router.use(authentication)
+router.get("/", AdminTmpController.all_admin_tmp)
+router.post("/", AdminTmpController.create_admin_tmp)
+router.get('/:id', AdminTmpController.single_admin_tmp)
+router.patch("/:id", AdminTmpController.update_admin_tmp)
+router.delete("/:id", AdminTmpController.delete_admin_tmp)
+module.exports = router;

@@ -86,9 +86,10 @@ const Footer = () => {
           </Row>
           <div className="footer_iland">
             <Row>
+              {/* <a style={{ color: "#898888", }} href='https://lenexit.com'></a> */}
               <Col lg={6}>
                 <p style={{ textTransform: "capitalize", color: 'white', fontSize: "14px", marginTop: "20px" }}>
-                  @copyright 2023-2024 <a style={{ color: "#898888", }} href='https://lenexit.com'>Lenexit</a> all rights reserved
+                  Copyright @ 2023-2024 Lenexit All Rights Reserved
                 </p>
               </Col>
               <Col lg={6}>
@@ -97,9 +98,9 @@ const Footer = () => {
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink>Advertise</NavLink></li>
                     <li><NavLink to="/help_support">Help & Support</NavLink></li>
-                    <li><NavLink to="/faq">Faq</NavLink></li>
+                    <li><NavLink to="/faq">FAQ</NavLink></li>
                     <li><NavLink to="/privacy_policy">Privacy & Terms</NavLink></li>
-                    <li><NavLink to='/cookie_policy'>Cookie Privacy</NavLink></li>
+                    {/* <li><NavLink to='/cookie_policy'>Cookie Privacy</NavLink></li> */}
                   </ul>
                 </div>
               </Col>
