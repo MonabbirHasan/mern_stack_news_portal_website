@@ -7,6 +7,7 @@ import { Button, FormControl, FormControlLabel, IconButton, Radio, RadioGroup} f
 import ProductCard from '../../components/product_card/ProductCard'
 import { Sort } from "@mui/icons-material"
 import "./wp_theme.css"
+import { Helmet } from 'react-helmet'
 const WpTheme = () => {
     const [ShowFilterSidebar, setShowFilterSidebar] = useState(false);
     const handleCloseFilterSidebar = () => setShowFilterSidebar(false);
@@ -14,6 +15,10 @@ const WpTheme = () => {
     return (
         <>
             <Header />
+            <Helmet>
+                <title>LenexIT - Wordpress Theme</title>
+                <link rel="canonical" href={location.href} />
+            </Helmet>
             <div className='wp_theme_pages'>
                 <Container>
                     <div className="wp_theme_pages_wrapper">

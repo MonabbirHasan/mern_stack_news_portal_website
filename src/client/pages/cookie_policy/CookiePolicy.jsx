@@ -2,12 +2,17 @@ import React, { lazy } from 'react'
 import { Container } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import "./cookie_policy.css"
+import { Helmet } from 'react-helmet'
 const Header = lazy(() => import("../../components/common/header/Header"))
 const Footer = lazy(() => import("../../components/common/footer/Footer"))
 const CookiePolicy = () => {
     return (
         <>
             <Header />
+            <Helmet>
+                <title>LenexIT - Cookie policy</title>
+                <link rel="canonical" href={location.href} />
+            </Helmet>
             <div className='cookie_policy'>
                 <Container>
                     <h1>Cookie Policy of Lenexit</h1>

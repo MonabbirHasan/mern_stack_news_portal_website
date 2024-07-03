@@ -5,6 +5,7 @@ import { Alert, Button, FormControl, Stack } from '@mui/material'
 import { Apartment, Call, Send } from '@mui/icons-material'
 import { toast } from 'react-toastify'
 import ApiClient from '../../../utils/ApiClient/ApiClient'
+import { Helmet } from 'react-helmet'
 const Header = lazy(() => import("../../components/common/header/Header"))
 const Footer = lazy(() => import("../../components/common/footer/Footer"))
 const Contact = () => {
@@ -64,6 +65,10 @@ const Contact = () => {
   return (
     <>
       <Header />
+      <Helmet>
+        <title>LenexIT - Contact</title>
+        <link rel="canonical" href={location.href} />
+      </Helmet>
       <div className='contact_page'>
         <Container>
           <div className="contact_page_wrapper">

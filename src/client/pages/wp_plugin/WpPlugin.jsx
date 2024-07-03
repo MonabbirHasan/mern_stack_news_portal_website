@@ -7,6 +7,7 @@ import { Accordion, Col, Container, Offcanvas, Row, } from 'react-bootstrap'
 import { Button, FormControl, FormControlLabel, IconButton, Radio, RadioGroup } from '@mui/material'
 import ProductCard from '../../components/product_card/ProductCard'
 import { Download, Sort } from "@mui/icons-material"
+import { Helmet } from 'react-helmet'
 const WpPlugin = () => {
     const [ShowFilterSidebar, setShowFilterSidebar] = useState(false);
     const handleCloseFilterSidebar = () => setShowFilterSidebar(false);
@@ -14,6 +15,10 @@ const WpPlugin = () => {
     return (
         <>
             <Header />
+            <Helmet>
+                <title>LenexIT - Wordpress Plugin</title>
+                <link rel="canonical" href={location.href} />
+            </Helmet>
             <div className='wp_plugin_page'>
                 <Container>
                     <div className="wp_plugin_page_wrapper">

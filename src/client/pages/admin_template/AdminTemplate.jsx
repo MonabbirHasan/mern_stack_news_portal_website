@@ -7,6 +7,7 @@ import { Button, FormControl, FormControlLabel, IconButton, Radio, RadioGroup, T
 import ProductCard from '../../components/product_card/ProductCard'
 import { Sort } from '@mui/icons-material'
 import "./admin_template.css"
+import { Helmet } from 'react-helmet'
 const AdminTemplate = () => {
     const [ShowFilterSidebar, setShowFilterSidebar] = useState(false);
     const [TabsValue, setTabsValue] = useState(1);
@@ -18,6 +19,10 @@ const AdminTemplate = () => {
     return (
         <>
             <Header />
+            <Helmet>
+                <title>LenexIT - Admin Template</title>
+                <link rel="canonical" href={location.href} />
+            </Helmet>
             <div className='admin_template_page'>
                 <Container>
                     <div className="admin_template_page_wrapper">

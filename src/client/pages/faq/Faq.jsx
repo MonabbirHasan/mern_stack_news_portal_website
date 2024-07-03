@@ -1,12 +1,17 @@
 import React, { lazy } from 'react'
 import "./faq.css"
 import { Accordion, Container } from 'react-bootstrap'
+import { Helmet } from 'react-helmet'
 const Header = lazy(() => import("../../components/common/header/Header"))
 const Footer = lazy(() => import("../../components/common/footer/Footer"))
 const Faq = () => {
     return (
         <>
             <Header />
+            <Helmet>
+                <title>LenexIT - FAQs</title>
+                <link rel="canonical" href={location.href} />
+            </Helmet>
             <div className='faq_pages'>
                 <Container>
                     <div id="accordianId" role="tablist" aria-multiselectable="true">

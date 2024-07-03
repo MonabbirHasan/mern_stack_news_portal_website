@@ -7,6 +7,7 @@ import { Accordion, Col, Container, Offcanvas, Row, } from 'react-bootstrap'
 import { Sort } from '@mui/icons-material'
 import { Button, FormControl, FormControlLabel, IconButton, Radio, RadioGroup, Tab, Tabs } from '@mui/material'
 import ProductCard from '../../components/product_card/ProductCard'
+import { Helmet } from 'react-helmet'
 const WebsiteTemplate = () => {
     const [ShowFilterSidebar, setShowFilterSidebar] = useState(false);
     const [TabsValue, setTabsValue] = useState(1);
@@ -18,6 +19,10 @@ const WebsiteTemplate = () => {
     return (
         <>
             <Header />
+            <Helmet>
+                <title>LenexIT - Website Template</title>
+                <link rel="canonical" href={location.href} />
+            </Helmet>
             <div className='website_template_page'>
                 <Container>
                     <div className="website_template_page_wrapper">

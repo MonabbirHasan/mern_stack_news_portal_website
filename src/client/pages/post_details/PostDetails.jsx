@@ -11,6 +11,7 @@ import ApiClient from '../../../utils/ApiClient/ApiClient'
 import Carousel from 'react-multi-carousel';
 import { toast } from 'react-toastify'
 import { ThreeDots } from 'react-loader-spinner'
+import { Helmet } from 'react-helmet'
 const PostDetails = () => {
     const location = useLocation();
     const navigate = useNavigate()
@@ -223,6 +224,10 @@ const PostDetails = () => {
     return (
         <>
             <Header />
+            <Helmet>
+                <title>LenexIT - Post Details</title>
+                <link rel="canonical" href={location.href} />
+            </Helmet>
             <div className='post_details'>
                 <Container fluid>
                     <div className="post_details_banner">

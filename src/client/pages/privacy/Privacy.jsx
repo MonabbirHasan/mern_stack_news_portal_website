@@ -1,12 +1,17 @@
 import React, { lazy } from 'react'
 import { Container } from 'react-bootstrap'
 import "./privacy_policy.css"
+import { Helmet } from 'react-helmet'
 const Header = lazy(() => import("../../components/common/header/Header"))
 const Footer = lazy(() => import("../../components/common/footer/Footer"))
 const Privacy = () => {
     return (
         <>
             <Header />
+            <Helmet>
+                <title>LenexIT - Privacy</title>
+                <link rel="canonical" href={location.href} />
+            </Helmet>
             <div className='privacy_policy'>
                 <Container>
                     <h1 style={{ textTransform: 'capitalize' }}>our Terms & conditions</h1>

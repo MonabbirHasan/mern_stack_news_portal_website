@@ -13,6 +13,7 @@ import {
   FormControl,
   Typography,
 } from "@mui/material";
+import { Helmet } from "react-helmet";
 const ServiceReques = () => {
   const handleChangeSelectService = (event) => {
     setSname(event.target.value);
@@ -86,6 +87,10 @@ const ServiceReques = () => {
   return (
     <>
       <Header />
+      <Helmet>
+        <title>LenexIT - Service Request</title>
+        <link rel="canonical" href={location.href} />
+      </Helmet>
       <div className="service_request">
         <Container>
           <div className="service_request_wrapper">

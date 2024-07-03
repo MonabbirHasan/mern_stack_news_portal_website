@@ -1,12 +1,17 @@
 import React, { lazy } from 'react'
 import "./help_support.css"
 import { Container } from 'react-bootstrap'
+import { Helmet } from 'react-helmet'
 const Header = lazy(() => import("../../components/common/header/Header"))
 const Footer = lazy(() => import("../../components/common/footer/Footer"))
 const HelpSupport = () => {
     return (
         <>
             <Header />
+            <Helmet>
+                <title>LenexIT - Help & Support</title>
+                <link rel="canonical" href={location.href} />
+            </Helmet>
             <div className='help_support_page'>
                 <Container>
                     <h1>Our Help & Support</h1>

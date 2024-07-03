@@ -9,6 +9,7 @@ import { NavLink, useNavigate } from 'react-router-dom'
 import { Button } from '@mui/material'
 import { toast } from 'react-toastify'
 import page_not_found from "../../../assets/img/page_not_found.svg"
+import { Helmet } from 'react-helmet'
 const Header = lazy(() => import("../../components/common/header/Header"))
 const Footer = lazy(() => import("../../components/common/footer/Footer"))
 const Home = () => {
@@ -81,6 +82,10 @@ const Home = () => {
     return (
         <>
             <Header />
+            <Helmet>
+                <title>LenexIT - Home</title>
+                <link rel="canonical" href={location.href} />
+            </Helmet>
             <div className='home_page'>
                 <Container>
                     {/* BLOG BANNER SECTION START HERE */}

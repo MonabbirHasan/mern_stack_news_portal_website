@@ -3,12 +3,17 @@ import "./admin_tmp_details.css"
 import { Button, Col, Container, Row, Tab, Tabs } from 'react-bootstrap'
 import { Stack } from '@mui/material'
 import { ShoppingBag, Star } from '@mui/icons-material'
+import { Helmet } from 'react-helmet'
 const Header = lazy(() => import("../../components/common/header/Header"))
 const Footer = lazy(() => import("../../components/common/footer/Footer"))
 const AdminTmpDetails = () => {
     return (
         <>
             <Header />
+            <Helmet>
+                <title>LenexIT - Admin Template Details</title>
+                <link rel="canonical" href={location.href} />
+            </Helmet>
             <div className='admin_tmp_details_page'>
                 <Container>
                     <div className="admin_tmp_details_page_wrapper">

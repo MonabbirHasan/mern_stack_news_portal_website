@@ -5,6 +5,7 @@ import PostCard from '../../components/post_card/PostCard'
 import { useLocation, useNavigate } from 'react-router-dom'
 import ApiClient from '../../../utils/ApiClient/ApiClient'
 import { ThreeDots } from 'react-loader-spinner'
+import { Helmet } from 'react-helmet'
 const Header = lazy(() => import("../../components/common/header/Header"))
 const Footer = lazy(() => import("../../components/common/footer/Footer"))
 const Category = () => {
@@ -61,6 +62,10 @@ const Category = () => {
     return (
         <>
             <Header />
+            <Helmet>
+                <title>LenexIT - Category</title>
+                <link rel="canonical" href={location.href} />
+            </Helmet>
             <div className="category_page">
                 <Container>
                     <div className="category_wrapper">

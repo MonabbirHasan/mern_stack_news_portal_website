@@ -6,10 +6,15 @@ import { Col, Row } from "react-bootstrap";
 import "./service.css";
 import { Avatar } from "@mui/material";
 import { Android, BrandingWatermark, DesktopWindows, MobileFriendly, SettingsAccessibility, Web } from "@mui/icons-material";
+import { Helmet } from "react-helmet";
 const Service = () => {
   return (
     <>
       <Header />
+      <Helmet>
+        <title>LenexIT - Service</title>
+        <link rel="canonical" href={location.href} />
+      </Helmet>
       <div className="service_page">
         <div className="container">
           <div className="service_wrapper">
@@ -19,7 +24,7 @@ const Service = () => {
                   <NavLink to={"/service_request"}>
                     <div className="service_item">
                       <span>
-                        <Avatar sx={{background:"green"}}><Web htmlColor="white" /></Avatar>
+                        <Avatar sx={{ background: "green" }}><Web htmlColor="white" /></Avatar>
                       </span>
                       <h3 className="service_title">web development</h3>
                       <p>Lenexit offers full-stack web development services, delivering end-to-end solutions that encompass front-end and back-end expertise for seamless digital experiences.</p>
@@ -32,7 +37,7 @@ const Service = () => {
                   <NavLink to={"/service_request"}>
                     <div className="service_item">
                       <span>
-                        <Avatar sx={{background:"green"}}>
+                        <Avatar sx={{ background: "green" }}>
                           <Android htmlColor="white" />
                         </Avatar>
                       </span>
@@ -47,7 +52,7 @@ const Service = () => {
                   <NavLink to={"/service_request"}>
                     <div className="service_item">
                       <span>
-                        <Avatar sx={{background:"green"}}>
+                        <Avatar sx={{ background: "green" }}>
                           <DesktopWindows htmlColor="white" />
                         </Avatar>
                       </span>
@@ -62,7 +67,7 @@ const Service = () => {
                   <NavLink to={"/service_request"}>
                     <div className="service_item">
                       <span>
-                        <Avatar sx={{background:"green"}}>
+                        <Avatar sx={{ background: "green" }}>
                           <SettingsAccessibility htmlColor="white" />
                         </Avatar>
                       </span>
@@ -77,7 +82,7 @@ const Service = () => {
                   <NavLink to={"/service_request"}>
                     <div className="service_item">
                       <span>
-                        <Avatar sx={{background:"green"}}>
+                        <Avatar sx={{ background: "green" }}>
                           <MobileFriendly htmlColor="white" />
                         </Avatar>
                       </span>
@@ -92,7 +97,7 @@ const Service = () => {
                   <NavLink to={"/service_request"}>
                     <div className="service_item">
                       <span>
-                        <Avatar sx={{background:"green"}}>
+                        <Avatar sx={{ background: "green" }}>
                           <BrandingWatermark htmlColor="white" />
                         </Avatar>
                       </span>
