@@ -20,6 +20,7 @@ const Login = () => {
     const [loader, setLoader] = useState(false)
 
     const ClientApi = new ApiClient(import.meta.env.VITE_API_ROOT_URI)
+    
     const validate = () => {
         let errors = {}
         if (!Email) {

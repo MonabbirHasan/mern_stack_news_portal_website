@@ -60,9 +60,6 @@ const PostManagement = () => {
     if (!post_title) {
       errors.post_title = "title is required"
     }
-    if (post_title.length > 56) {
-      errors.post_title = "Title must be 56 characters";
-    }
     if (!post_tags) {
       errors.post_tags = "tags is required"
     }

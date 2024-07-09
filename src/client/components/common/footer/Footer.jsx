@@ -72,7 +72,6 @@ const Footer = () => {
                 <p>AI</p>
                 <p>Theme</p>
                 <p>plugin</p>
-                <p>Support</p>
               </div>
             </Col>
             <Col>
