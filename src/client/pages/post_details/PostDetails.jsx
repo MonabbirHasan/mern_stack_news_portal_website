@@ -229,7 +229,7 @@ const PostDetails = () => {
                 <link rel="canonical" href={location.href} />
             </Helmet>
             <div className='post_details'>
-                <Container fluid>
+                <Container>
                     <div className="post_details_banner">
                         <Breadcrumb>
                             <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
@@ -382,12 +382,12 @@ const PostDetails = () => {
                                                 thumbnail={`${import.meta.env.VITE_IMAGE_ROOT_URI}/blog_img/${items.post_thumbnail}`}
                                                 title={items.post_title}
                                                 author_name={items.post_author}
-                                                published={items.post_published.split("T")[0]}
+                                                published={items.post_published&&items.post_published.split("T")[0]}
                                                 comment="302"
                                                 category={
                                                     AllCategory.filter((item) => item.category_id == items.post_category).map((i) => i.category_name)
                                                 }
-                                                description={<div dangerouslySetInnerHTML={{ __html: items.post_description.slice(0, 150).replaceAll("<br>", " ") + "..." }} />}
+                                                description={<div dangerouslySetInnerHTML={{ __html: items.post_description&&items.post_description.slice(0, 150).replaceAll("<br>", " ") + "..." }} />}
                                             />
                                         </div>
                                     ))

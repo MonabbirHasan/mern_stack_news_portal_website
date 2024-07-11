@@ -1,200 +1,207 @@
 .post_details {
-    padding: 5px 0;
-    width: 100%;
+  padding: 5px 0;
+  width: 100%;
 }
 
 .post_details .post_details_wrapper {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .post_details .post_details_wrapper .post_details_thumb img {
-    border-radius: 10px;
-    width: 100%;
-    height: 70vh;
+  border-radius: 10px;
+  width: 100%;
+  height: 70vh;
 }
 
 .post_details .post_details_wrapper .post_details_category {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 .post_details .post_details_wrapper .post_details_title {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .post_details .post_details_wrapper .post_details_title h3 {
-    color: #444;
+  color: #444;
 }
 
 .post_details .post_details_wrapper .post_details_info {
-    padding-bottom: 10px;
-    text-transform: capitalize;
+  padding-bottom: 10px;
+  text-transform: capitalize;
 }
 
 .post_details .post_details_wrapper .post_details_info span {
-    padding: 0 5px;
-    font-size: 12px;
+  padding: 0 5px;
+  font-size: 12px;
 }
 
 .post_details .post_details_wrapper .post_details_info span small {
-    padding-left: 5px;
-    vertical-align: middle;
-    color: #444;
+  padding-left: 5px;
+  vertical-align: middle;
+  color: #444;
 }
 
 .post_details .post_details_wrapper .post_details_description {
-    color: #777777;
-    text-transform: capitalize;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 1.625em;
+  color: #777777;
+  text-transform: capitalize;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.625em;
 }
-
+.post_details .post_details_wrapper .post_details_description p img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.post_details .post_details_wrapper .post_details_description iframe {
+  width: 100% !important;
+  height: 420px !important;
+  border-radius: 5px;
+}
 /* horizontal_post */
 .horizontal_post {
-    padding: 10px 5px;
-    display: flex;
-    gap: 5px;
-    background: #fff;
-    box-shadow: -1px 0px 2px #eee, 1px 0px 2px #eee;
-    border-radius: 5px;
-    margin: 7px 0;
+  padding: 10px 5px;
+  display: flex;
+  gap: 5px;
+  background: #fff;
+  box-shadow: -1px 0px 2px #eee, 1px 0px 2px #eee;
+  border-radius: 5px;
+  margin: 7px 0;
 }
 
 .horizontal_post .h_post_thumb {
-    padding: 5px;
+  padding: 5px;
 }
 
 .horizontal_post .h_post_thumb img {
-    width: 120px;
-    height: 100px;
-    border-radius: 5px;
+  width: 120px;
+  height: 100px;
+  border-radius: 5px;
 }
 
 .horizontal_post .h_post_detail p {
-    font-size: 14px;
-    cursor: pointer;
-    text-transform: capitalize;
+  font-size: 14px;
+  cursor: pointer;
+  text-transform: capitalize;
 }
 .horizontal_post .h_post_detail p:hover {
-    text-decoration: underline;
-    color: green;
+  text-decoration: underline;
+  color: green;
 }
 
 .horizontal_post .h_post_detail .h_post_info span {
-    padding: 0 3px;
+  padding: 0 3px;
 }
 
 .horizontal_post .h_post_detail .h_post_info span small {
-    padding: 0 2px;
-
+  padding: 0 2px;
 }
 
 /* details_page_ads */
 .details_page_ads {
-    padding: 5px;
+  padding: 5px;
 }
 
 .details_page_ads img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
 }
 
 /* most_popular_post */
 .most_popular_post {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .most_popular_post h3 {
-    text-transform: capitalize;
-    font-size: 14px;
-    color: white;
-    background-color: black;
-    padding: 5px;
-    border-radius: 5px;
+  text-transform: capitalize;
+  font-size: 14px;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 /* post_details_comments_section */
 .post_details .post_details_comments_section {
-    padding: 30px 0;
+  padding: 30px 0;
 }
 
 .post_details .comment_form {
-    padding: 10px 0;
-
+  padding: 10px 0;
 }
 
 .post_details .social_network {
-    padding: 10px;
+  padding: 10px;
 }
 
 .post_details .social_network div {
-    padding: 10px;
-    background: dodgerblue;
-    margin: 5px;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px;
+  background: dodgerblue;
+  margin: 5px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .post_details .social_network div:hover {
-    background: #187ee4;
+  background: #187ee4;
 }
 
 .post_details .social_network div span {
-    padding-left: 5px;
+  padding-left: 5px;
 }
 
 .comments_list .comment_item {
-    padding: 4px;
-    display: flex;
-    gap: 10px;
-    margin: 10px 0;
+  padding: 4px;
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
 }
 
 .comments_list .comment_item p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .comments_list .comment_item.is_reply {
-    margin-left: 40px;
+  margin-left: 40px;
 }
 
 .comments_list .comment_item p:first-child {
-    color: black;
-    font-size: 14px;
-    font-weight: 600;
+  color: black;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .comments_list .comment_item p:last-child {
-    color: #444;
-    font-size: 16px;
+  color: #444;
+  font-size: 16px;
 }
 
 .comments_list .comment_item button {
-    border: none;
-    background-color: #eee;
-    border-radius: 5px;
-    color: black;
-    text-transform: capitalize;
-    font-size: 13px;
-    cursor: pointer;
+  border: none;
+  background-color: #eee;
+  border-radius: 5px;
+  color: black;
+  text-transform: capitalize;
+  font-size: 13px;
+  cursor: pointer;
 }
 
 .comments_list .comment_item button:hover {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
 
 /* comment_section_ads */
 .comment_section_ads {
-    padding: 5px;
+  padding: 5px;
 }
 
 .comment_section_ads img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    margin: 5px 0;
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin: 5px 0;
 }
